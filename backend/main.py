@@ -8,6 +8,12 @@ import os
 
 app = Flask(__name__)
 CORS(app)
+
+if os.environ.get("NEWS_API_KEY") == None:
+    exit('No API KEY. Please create a .env file and add the NEWS_API_KEY parameter')
+
+print ('os.environ.get("NEWS_API_KEY")', os.environ.get("NEWS_API_KEY"))
+
 api = NewsApiClient(api_key=os.environ.get("NEWS_API_KEY"))
 
 # index route will display the 
