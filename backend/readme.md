@@ -19,7 +19,7 @@ Run `pip install -r requirements.txt`
 
 ## Source venv again to make flask command available 
 
-source .venv/bin/activate
+source `.venv/bin/activate`
 
 ## Run 
 
