@@ -92,9 +92,6 @@ const handleClick = async () => {
         </div>
 
       </div>
-      <div v-if="articles">
-        {{ articles[0] }}
-      </div>
     </div>
   </section>
 
